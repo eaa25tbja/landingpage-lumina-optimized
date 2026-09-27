@@ -133,8 +133,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 80px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 15px;
+  padding-bottom: 14px;
   background-color: var(--Footer);
   cursor: pointer;
 }
@@ -147,13 +147,20 @@ header {
 .nav-icons {
   display: flex;
   flex-direction: row;
+  gap: 64px;
+  align-items: center;
+}
+
+.nav-icons-utility {
+  display: flex;
+  flex-direction: row;
   gap: 20px;
   align-items: center;
 }
 
-#menu img {
-  width: 20 px;
-  height: auto;
+.nav-icons img {
+  height: 51px;
+  width: auto;
   display: block;
 }
 
