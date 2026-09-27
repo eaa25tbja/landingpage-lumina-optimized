@@ -211,19 +211,19 @@ header {
 }
 
 .color1 {
-  background-image: url(images/speaker-colors/jacks-whiteu.bg.png);
+  background-image: url(assets/speaker-colors/jacks-white.webp);
 }
 
 .color2 {
-  background-image: url(images/speaker-colors/sabbath-black-u.bg.png);
+  background-image: url(assets/speaker-colors/sabbath-black.webp);
 }
 
 .color3 {
-  background-image: url(images/speaker-colors/springing-silveru.bg.png);
+  background-image: url(assets/speaker-colors/springing-silver.webp);
 }
 
 .color4 {
-  background-image: url(images/speaker-colors/crisp-brownu.bg.png);
+  background-image: url(assets/speaker-colors/crisp-brown.webp);
 }
 
 .ButtonContainer {
