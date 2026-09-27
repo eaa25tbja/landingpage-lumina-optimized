@@ -96,6 +96,7 @@ body {
 
 /*Hero*/
 header {
+  position: relative; /*Gør det muligt at placere scroll-indikatoren nederst i billedet*/
   height: 100vh;
   background-color: var(--bg-color);
 
@@ -116,11 +117,41 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  gap: 24px;
   padding-left: 120px;
-  padding-right: 700px;
+  padding-right: 600px;
   padding-top: 100px;
   padding-bottom: 224px;
   text-align: left;
+}
+
+.hero-subtitle {
+  max-width: 480px;
+}
+
+/*Scroll ned indikator nederst i Hero*/
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: var(--tekst-billeder);
+}
+
+.scroll-indicator p {
+  font-family: "Jura", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.scroll-indicator img {
+  width: 16px;
+  height: auto;
 }
 
 /*BUY NOW knap styles*/
