@@ -28,6 +28,14 @@
   --features-header-gap: 40px; /*Afstand mellem overskriften og taglinen i toppen af Features*/
   --features-header-margin-bottom: 64px; /*Afstand fra header-rækken ned til kortene*/
   --features-subheading-margin-bottom: 8px; /*Afstand under "LUMINA one" teksten over overskriften*/
+
+  /*Margin variabler til Trustpilot sektionen*/
+  --trust-heading-top: 64px; /*Afstand fra toppen af billedet ned til "LUMINA one"*/
+  --trust-heading-gap: 12px; /*Afstand mellem LUMINA one, overskriften og linket*/
+  --trust-card-top: 260px; /*Afstand fra toppen af billedet ned til anmeldelses-kortet*/
+  --trust-card-width: 460px; /*Bredden på anmeldelses-kortet*/
+  --trust-card-padding: 32px; /*Padding inde i anmeldelses-kortet*/
+  --trust-card-gap: 20px; /*Afstand mellem stjerner, citat og navn i kortet*/
 }
 
 /*Tekst variabler*/
@@ -467,6 +475,78 @@ så ringen altid følger den runde form, uanset browser)*/
   font-family: "Manrope", sans-serif;
   font-size: 14px;
   font-weight: 500;
+}
+
+/*HER INDSÆTTES TRUSTPILOT SEKTION*/
+
+#TrustSection {
+  position: relative; /*Gør det muligt, at placere tekst/kort oven på billedet*/
+}
+
+.trust-bg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.trust-heading {
+  position: absolute;
+  top: var(--trust-heading-top);
+  left: var(--section-side-padding);
+  display: flex;
+  flex-direction: column;
+  gap: var(--trust-heading-gap);
+  color: var(--tekst-billeder);
+}
+
+.trust-link {
+  color: var(--tekst-billeder);
+}
+
+.trust-quote-card {
+  position: absolute;
+  top: var(--trust-card-top);
+  left: 50%;
+  transform: translateX(-50%);
+  width: var(--trust-card-width);
+  display: flex;
+  flex-direction: column;
+  gap: var(--trust-card-gap);
+  padding: var(--trust-card-padding);
+  background-color: var(--bg-color);
+  color: var(--tekst-farve);
+  border-radius: 20px;
+}
+
+.trust-quote-stars {
+  height: 38px;
+  width: auto;
+  align-self: flex-start;
+}
+
+.trust-quote-author {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.trust-quote-author img {
+  height: 20px;
+  width: auto;
+}
+
+.trust-rating {
+  position: absolute;
+  right: var(--section-side-padding);
+  bottom: var(--section-side-padding);
+  width: 1216px;
+  max-width: none;
+  height: auto;
+  pointer-events: none;
 }
 
 /*HER INDSÆTTES JUST ONE MORE SEKTION OG THE ONE THATS GOING AWAY SEKTION*/
