@@ -140,7 +140,7 @@ header {
 }
 
 #logo {
-  height: 30px;
+  height: 32px;
   width: auto;
 }
 
@@ -159,7 +159,7 @@ header {
 }
 
 .nav-icons img {
-  height: 40px;
+  height: 51px;
   width: auto;
   display: block;
 }
@@ -399,78 +399,63 @@ så ringen altid følger den runde form, uanset browser)*/
 /*HER INDSÆTTES FEATURES SEKTION*/
 
 #Features {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 80px;
-  padding: 100px 80px;
+  padding: 100px 20px;
   background-color: var(--bg-color);
-}
-
-.features-image {
-  flex: 0 0 auto;
-  width: 40%;
-}
-
-.features-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-}
-
-.features-content {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  width: 45%;
   color: var(--tekst-farve);
 }
 
-.features-content h1 {
-  margin-bottom: 24px;
-}
-
-.accordion {
-  border-top: 1px solid var(--tekst-farve);
-}
-
-.accordion-item {
-  border-bottom: 1px solid var(--tekst-farve);
-}
-
-.accordion-item summary {
+.features-header {
   display: flex;
-  align-items: center;
+  margin: 50px 50px;
   justify-content: space-between;
-  padding: 20px 0;
+  align-items: flex-end;
+  gap: 40px;
+  margin-bottom: 64px;
+}
+
+.features-heading h6 {
+  margin-bottom: 8px;
+}
+
+.features-tagline {
+  max-width: 540px;
+  text-align: right;
   font-family: "Jura", sans-serif;
   font-size: 20px;
   font-weight: 500;
-  cursor: pointer;
-  list-style: none;
 }
 
-.accordion-item summary::-webkit-details-marker {
-  display: none;
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
 }
 
-.accordion-item .chevron {
-  width: 10px;
-  height: 10px;
-  border-right: 2px solid var(--tekst-farve);
-  border-bottom: 2px solid var(--tekst-farve);
-  transform: rotate(45deg);
-  transition: transform 0.3s ease;
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 32px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 }
 
-.accordion-item[open] .chevron {
-  transform: rotate(-135deg);
+.feature-card img {
+  height: 48px;
+  width: 48px;
+  object-fit: contain;
 }
 
-.accordion-item p {
-  padding-bottom: 20px;
-  color: var(--tekst-farve);
+.feature-card ul {
+  list-style: disc;
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 /*HER INDSÆTTES JUST ONE MORE SEKTION OG THE ONE THATS GOING AWAY SEKTION*/
