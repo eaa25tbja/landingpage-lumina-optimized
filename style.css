@@ -169,7 +169,7 @@ header {
 }
 
 .nav-icons img {
-  height: 51px;
+  height: 32px;
   width: auto;
   display: block;
 }
@@ -357,7 +357,7 @@ så ringen altid følger den runde form, uanset browser)*/
   height: 320px;
   width: 280px;
   object-fit: cover; /*udfylder billederne i den defineret størrelse uden at strække billederne*/
-  border-radius: 25px;
+  border-radius: 20px;
 }
 
 /*THE ONE GIFT THAT HAS IT ALL billede styles*/
@@ -448,7 +448,7 @@ så ringen altid følger den runde form, uanset browser)*/
   flex-direction: column;
   gap: 20px;
   padding: 50px 20px 80px 20px;
-  border-radius: 8px;
+  border-radius: 20px;
   box-shadow: 0 10px 16px rgba(0, 0, 0, 0.08);
 }
 
@@ -498,6 +498,7 @@ så ringen altid følger den runde form, uanset browser)*/
   background-color: var(--Card-bg);
   padding: var(--card-padding);
   color: var(--tekst-farve);
+  border-radius: 20px;
   box-shadow: 0 10px 16px rgba(0, 0, 0, 0.08);
 }
 
