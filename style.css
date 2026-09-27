@@ -82,7 +82,7 @@ header {
   background-color: var(--bg-color);
 
   /* Herobilledet som baggrunden*/
-  background-image: url(images/lumina-by-day/hero-pic.jpg);
+  background-image: url(assets/hero-section.webp);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -130,12 +130,27 @@ header {
 #menu {
   display: flex;
   flex-direction: row;
-  justify-content: left;
-  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
   padding: 80px;
   padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: var(--Footer);
   cursor: pointer;
 }
+
+#logo {
+  height: 32px;
+  width: auto;
+}
+
+.nav-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+
 #menu img {
   width: 20 px;
   height: auto;
