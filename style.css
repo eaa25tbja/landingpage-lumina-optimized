@@ -112,6 +112,7 @@ header {
 
 #HeroText {
   color: var(--tekst-billeder);
+  font-family:;
   /* Tekstens placering */
   display: flex;
   flex-direction: column;
@@ -127,19 +128,17 @@ header {
 
 .hero-subtitle {
   max-width: 480px;
+  font:;
 }
 
-/*Scroll ned indikator nederst i Hero*/
+/*Scroll ned indikator, under BUY NOW knappen i Hero*/
 
 .scroll-indicator {
-  position: absolute;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 8px;
+  margin-top: 40px;
   color: var(--tekst-billeder);
 }
 
@@ -173,6 +172,18 @@ header {
   background-color: var(--CTA-tekst);
   color: var(--CTA);
   border-color: var(--CTA);
+}
+
+/*BUY NOW knappen i Hero er lys, modsat de mørke knapper andre steder*/
+
+.hero-buy-button {
+  background-color: var(--CTA-tekst);
+  color: var(--CTA);
+}
+
+.hero-buy-button:hover {
+  background-color: var(--CTA);
+  color: var(--CTA-tekst);
 }
 
 /*Menu linje*/
