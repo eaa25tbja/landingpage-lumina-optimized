@@ -957,3 +957,47 @@ header::after {
   padding: 10px 28px;
   font-size: 18px;
 }
+
+/*PRODUCT PAGE - image and text under each other instead of side by side*/
+#Produktside1 {
+  flex-direction: column;
+  align-items: stretch;
+  min-height: 0;
+  padding: 80px var(--section-side-padding) 40px;
+  margin-top: 0;
+}
+
+.container {
+  width: 100%;
+  height: 300px;
+  flex: none;
+}
+
+/*the images are centered when they stand alone*/
+.color,
+.color1,
+.color2,
+.color3,
+.color4 {
+  background-position: center;
+}
+
+.produktinfo {
+  flex: 1 1 auto;
+  width: 100%;
+  padding: 0;
+}
+
+/*price and button can sit under each other if there isn't room*/
+.price {
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/*the scroll text is normally absolute at the bottom and would hit the price*/
+.produkt-scroll-indicator {
+  position: static;
+  transform: none;
+  align-self: center;
+  margin-top: 24px;
+}
