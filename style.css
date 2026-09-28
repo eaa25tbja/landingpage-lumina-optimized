@@ -282,8 +282,8 @@ header {
   opacity: 0;
   inset: 0;
   position: absolute;
-  transition: 0.4 ease;
-  background-size: cover;
+  transition: 0.4s ease;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: left;
 }
