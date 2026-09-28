@@ -823,8 +823,8 @@ så ringen altid følger den runde form, uanset browser)*/
 }
 
 .InstaKarrusel img {
-  height: 320px;
-  width: 280px;
+  height: 300px;
+  width: 260px;
   object-fit: cover; /*udfylder billederne i den defineret størrelse uden at strække billederne*/
   border-radius: 20px;
 }
