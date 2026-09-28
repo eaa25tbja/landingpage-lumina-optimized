@@ -292,7 +292,7 @@ og giver den mere plads, så den forbliver synlig*/
   justify-content: space-between;
   padding: var(--section-side-padding);
   background-color: var(--bg-color);
-  height: 830px;
+  min-height: 830px;
   width: 100%;
   margin-top: 10px;
   align-items: center;
@@ -301,8 +301,10 @@ og giver den mere plads, så den forbliver synlig*/
 .produktinfo {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 24px;
   padding: 16px;
+  min-width: none;
+  flex: 0 0 44rem;
 }
 
 .container {
@@ -314,26 +316,77 @@ og giver den mere plads, så den forbliver synlig*/
 .headlineProduct {
   display: flex;
   flex-direction: column;
-  padding-bottom: 32px;
   color: var(--tekst-farve);
   gap: 10px;
 }
 
-.trustpilot {
+.headline-list {
+  list-style: disc;
+  padding-left: 18px;
   display: flex;
   flex-direction: column;
-  padding-bottom: 32px;
-  gap: 10px;
+  gap: 6px;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/*Accordions med produktinformation og nøgle-egenskaber. Bruger <details>/<summary>,
+så åbn/luk virker uden JavaScript*/
+
+.accordions {
+  display: flex;
+  flex-direction: column;
   color: var(--tekst-farve);
 }
 
-.trustpilot p {
-  font-style: italic;
+/*Linjen sidder under selve titlen (summary), så den bliver på plads
+der - i stedet for under hele accordionen - når man åbner den, og
+teksten kommer til at stå under linjen*/
+.accordion summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--tekst-farve);
+  cursor: pointer;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  list-style: none; /*Fjerner browserens standard-pil*/
 }
 
-.trustpilot img {
-  width: 80px;
-  height: 20px;
+.accordion summary::-webkit-details-marker {
+  display: none; /*Fjerner standard-pilen i Chrome/Safari*/
+}
+
+/*Pilen matcher den i Hero, men i den mørke udgave (undertekst på lys baggrund),
+og vender med det samme ikon, når accordionen åbnes*/
+.accordion-arrow {
+  width: 14px;
+  height: auto;
+  transition: transform 0.2s ease;
+}
+
+.accordion[open] .accordion-arrow {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  padding-top: 16px;
+  padding-bottom: 20px;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.key-elements-list {
+  list-style: disc;
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 /*Farveskift på produktbilledet*/
@@ -380,7 +433,6 @@ og giver den mere plads, så den forbliver synlig*/
   gap: 10px;
   padding-top: 16px;
   padding-bottom: 16px;
-  border-top: 1px solid var(--tekst-farve);
   border-bottom: 1px solid var(--tekst-farve);
 }
 
