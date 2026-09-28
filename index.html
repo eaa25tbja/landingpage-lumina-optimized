@@ -16,21 +16,28 @@
     <header>
       <!--Menuen er lavet om til et nav-element-->
       <nav id="menu">
-        <img
-          src="assets/icons/nav-bar-icons/logo.png"
-          alt="LUMINA audio, Nordic sound"
-          id="logo"
-        />
+        <a href="./" class="logo-link">
+          <img
+            src="assets/icons/nav-bar-icons/logo.png"
+            alt="LUMINA audio, Nordic sound - go to front page"
+            id="logo"
+          />
+        </a>
         <div class="nav-icons">
           <div class="nav-icons-utility">
-            <img src="assets/icons/nav-bar-icons/search.png" alt="Search bar" />
-            <img
-              src="assets/icons/nav-bar-icons/profile.png"
-              alt="Profile icon"
-            />
-            <img src="assets/icons/nav-bar-icons/cart.png" alt="Add to cart" />
+            <button type="button" class="nav-button" aria-label="Search">
+              <img src="assets/icons/nav-bar-icons/search.png" alt="" />
+            </button>
+            <a href="#" class="nav-button" aria-label="My account">
+              <img src="assets/icons/nav-bar-icons/profile.png" alt="" />
+            </a>
+            <a href="#" class="nav-button" aria-label="Shopping cart">
+              <img src="assets/icons/nav-bar-icons/cart.png" alt="" />
+            </a>
           </div>
-          <img src="assets/icons/nav-bar-icons/menu.png" alt="Menu icon" />
+          <button type="button" class="nav-button" aria-label="Open menu">
+            <img src="assets/icons/nav-bar-icons/menu.png" alt="" />
+          </button>
         </div>
       </nav>
 

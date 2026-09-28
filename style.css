@@ -106,6 +106,25 @@ p {
 }
 
 /* ==========================================================================
+   FOKUS (tastaturnavigation)
+   ========================================================================== */
+
+/*Tydelig ring når man navigerer med tastatur*/
+:focus-visible {
+  outline: 2px solid var(--CTA);
+  outline-offset: 3px;
+}
+
+/*Lys ring på de mørke baggrunde (menu, footer) og ovenpå billeder*/
+#menu :focus-visible,
+#Footer :focus-visible,
+#HeroText :focus-visible,
+.gift-content :focus-visible,
+.trust-heading :focus-visible {
+  outline-color: var(--tekst-billeder);
+}
+
+/* ==========================================================================
    GENBRUGTE KNAPPER
    ========================================================================== */
 
@@ -257,12 +276,16 @@ og giver den mere plads, så den forbliver synlig*/
   padding-top: 15px;
   padding-bottom: 14px;
   background-color: var(--Footer);
-  cursor: pointer;
+}
+
+.logo-link {
+  display: block;
 }
 
 #logo {
   height: 32px;
   width: auto;
+  display: block;
 }
 
 .nav-icons {
@@ -277,6 +300,15 @@ og giver den mere plads, så den forbliver synlig*/
   flex-direction: row;
   gap: 20px;
   align-items: center;
+}
+
+/*Ikonerne er nu rigtige knapper/links - fjerner browserens standard knap-styling*/
+.nav-button {
+  display: block;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
 }
 
 .nav-icons img {
