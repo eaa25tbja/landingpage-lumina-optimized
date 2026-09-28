@@ -877,3 +877,16 @@ så ringen altid følger den runde form, uanset browser)*/
   font-size: 13px;
   opacity: 0.6;
 }
+
+/* ==========================================================================
+   RESPONSIVT (telefon + zoom 200%)
+   ========================================================================== */
+
+@media (max-width: 1000px) {
+  /*mindre margin på hele siden (bruger mine variabler fra :root)*/
+  :root {
+    --section-side-padding: 20px;
+    --card-padding: 16px;
+    --features-header-margin-bottom: 32px;
+  }
+}
