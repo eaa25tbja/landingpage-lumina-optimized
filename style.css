@@ -788,7 +788,7 @@ så ringen altid følger den runde form, uanset browser)*/
 }
 
 /* ==========================================================================
-   LUMINATE YOURSELF (Instagram)
+  INSTAGRAM KARRUSSEL
    ========================================================================== */
 
 #LuminateYourself {
@@ -802,7 +802,7 @@ så ringen altid følger den runde form, uanset browser)*/
   color: var(--tekst-farve);
   text-align: left;
   margin-bottom: 10px;
-  padding: 0 var(--section-side-padding);
+  padding: 20px var(--section-side-padding) 0;
 }
 
 #LuminateYourself .section-subtitle {
@@ -889,218 +889,217 @@ så ringen altid følger den runde form, uanset browser)*/
     --card-padding: 16px;
     --features-header-margin-bottom: 32px;
   }
-}
 
-/*TEKST - mindre overskrifter*/
-h1,
-#HeroText h1,
-.display-heading {
-  font-size: 36px;
-}
+  /*TEKST - mindre overskrifter*/
+  h1,
+  #HeroText h1,
+  .display-heading {
+    font-size: 36px;
+  }
 
-h2 {
-  font-size: 26px;
-}
+  h2 {
+    font-size: 26px;
+  }
 
-.section-subtitle {
-  font-size: 16px;
-}
+  .section-subtitle {
+    font-size: 16px;
+  }
 
-/*MENU - smaller icons and less spacing*/
-#menu {
-  padding: 12px var(--section-side-padding);
-}
+  /*MENU - smaller icons and less spacing*/
+  #menu {
+    padding: 12px var(--section-side-padding);
+  }
 
-#logo {
-  height: 24px;
-}
+  #logo {
+    height: 24px;
+  }
 
-.nav-icons {
-  gap: 16px;
-}
+  .nav-icons {
+    gap: 16px;
+  }
 
-.nav-icons-utility {
-  gap: 8px;
-}
+  .nav-icons-utility {
+    gap: 8px;
+  }
 
-.nav-icons img {
-  height: 26px;
-}
+  .nav-icons img {
+    height: 26px;
+  }
 
-/*HERO - dark background with white text, and the image goes below*/
-header {
-  height: auto; /*follows the content instead of 100vh*/
-  background-image: none; /*the image moves to ::after below*/
-  background-color: var(--Footer); /*same dark color as the menu and footer*/
-  display: flex;
-  flex-direction: column;
-}
+  /*HERO - dark background with white text, and the image goes below*/
+  header {
+    height: auto; /*follows the content instead of 100vh*/
+    background-image: none; /*the image moves to ::after below*/
+    background-color: var(--Footer); /*same dark color as the menu and footer*/
+    display: flex;
+    flex-direction: column;
+  }
 
-#HeroText {
-  padding: 100px var(--section-side-padding) 40px;
-}
+  #HeroText {
+    padding: 100px var(--section-side-padding) 40px;
+  }
 
-/*the image comes as a box under the text*/
-header::after {
-  content: "";
-  height: 320px;
-  background-image: url(assets/hero-section.webp);
-  background-size: cover;
-  background-position: 75% center; /*change the number until the speaker is visible*/
-}
+  /*the image comes as a box under the text*/
+  header::after {
+    content: "";
+    height: 320px;
+    background-image: url(assets/hero-section.webp);
+    background-size: cover;
+    background-position: 75% center; /*change the number until the speaker is visible*/
+  }
 
-.hero-subtitle {
-  max-width: 100%;
-}
+  .hero-subtitle {
+    max-width: 100%;
+  }
 
-.HeroButton {
-  padding: 10px 28px;
-  font-size: 18px;
-}
+  .HeroButton {
+    padding: 10px 28px;
+    font-size: 18px;
+  }
 
-/*PRODUCT PAGE - image and text under each other instead of side by side*/
-#Produktside1 {
-  flex-direction: column;
-  align-items: stretch;
-  min-height: 0;
-  padding: 80px var(--section-side-padding) 40px;
-  margin-top: 0;
-}
+  /*PRODUCT PAGE - image and text under each other instead of side by side*/
+  #Produktside1 {
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 0;
+    padding: 80px var(--section-side-padding) 40px;
+    margin-top: 0;
+  }
 
-.container {
-  width: 100%;
-  height: 300px;
-  flex: none;
-}
+  .container {
+    width: 100%;
+    height: 300px;
+    flex: none;
+  }
 
-/*the images are centered when they stand alone*/
-.color,
-.color1,
-.color2,
-.color3,
-.color4 {
-  background-position: center;
-}
+  /*the images are centered when they stand alone*/
+  .color,
+  .color1,
+  .color2,
+  .color3,
+  .color4 {
+    background-position: center;
+  }
 
-.produktinfo {
-  flex: 1 1 auto;
-  width: 100%;
-  padding: 0;
-}
+  .produktinfo {
+    flex: 1 1 auto;
+    width: 100%;
+    padding: 0;
+  }
 
-/*price and button can sit under each other if there isn't room*/
-.price {
-  flex-wrap: wrap;
-  gap: 12px;
-}
+  /*price and button can sit under each other if there isn't room*/
+  .price {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
 
-/*the scroll text is normally absolute at the bottom and would hit the price*/
-.produkt-scroll-indicator {
-  position: static;
-  transform: none;
-  align-self: center;
-  margin-top: 24px;
-}
+  /*the scroll text is normally absolute at the bottom and would hit the price*/
+  .produkt-scroll-indicator {
+    position: static;
+    transform: none;
+    align-self: center;
+    margin-top: 24px;
+  }
 
-/*FEATURES - the cards fill the full width and go from 2 to 1 column on their own*/
-.features-header {
-  flex-direction: column;
-  align-items: flex-start;
-}
+  /*FEATURES - the cards fill the full width and go from 2 to 1 column on their own*/
+  .features-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-.features-tagline {
-  text-align: left;
-}
+  .features-tagline {
+    text-align: left;
+  }
 
-.features-grid {
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-}
+  .features-grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
 
-.feature-card {
-  padding: 32px 20px 40px;
-}
+  .feature-card {
+    padding: 32px 20px 40px;
+  }
 
-/*TRUSTPILOT - the text was absolute on top of the image. Now the image is a
-  background, and the text sits in normal flow*/
-#TrustSection {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  padding: 40px var(--section-side-padding);
-}
+  /*TRUSTPILOT - the text was absolute on top of the image. Now the image is a
+    background, and the text sits in normal flow*/
+  #TrustSection {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 40px var(--section-side-padding);
+  }
 
-.trust-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
+  .trust-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
 
-.trust-heading,
-.trust-quote-card,
-.trust-rating {
-  position: static;
-  transform: none;
-}
+  .trust-heading,
+  .trust-quote-card,
+  .trust-rating {
+    position: static;
+    transform: none;
+  }
 
-.trust-quote-card {
-  width: 100%;
-}
+  .trust-quote-card {
+    width: 100%;
+  }
 
-.trust-rating {
-  width: 100%;
-  max-width: 100%;
-  margin: 0; /* removes the negative margin that pushed it out to the right */
-  height: 100px; /* bigger number = bigger rating */
-  object-fit: cover;
-  object-position: right center;
-}
+  .trust-rating {
+    width: 100%;
+    max-width: 100%;
+    margin: 0; /* removes the negative margin that pushed it out to the right */
+    height: 100px; /* bigger number = bigger rating */
+    object-fit: cover;
+    object-position: right center;
+  }
 
-/*GIFT - dark background with white text, and the image goes below*/
-#TheOneGift {
-  display: flex;
-  flex-direction: column;
-  background-color: var(
-    --Footer
-  ); /*same dark color as the hero, menu and footer*/
-}
+  /*GIFT - dark background with white text, and the image goes below*/
+  #TheOneGift {
+    display: flex;
+    flex-direction: column;
+    background-color: var(
+      --Footer
+    ); /*same dark color as the hero, menu and footer*/
+  }
 
-.gift-content {
-  position: static; /*no longer on top of the image*/
-  order: -1; /*the image comes first in the HTML, so this moves the text above it*/
-  padding: 40px var(--section-side-padding);
-}
+  .gift-content {
+    position: static; /*no longer on top of the image*/
+    order: -1; /*the image comes first in the HTML, so this moves the text above it*/
+    padding: 40px var(--section-side-padding);
+  }
 
-.gift-content h2,
-.gift-subtitle {
-  max-width: 100%;
-}
+  .gift-content h2,
+  .gift-subtitle {
+    max-width: 100%;
+  }
 
-#TheOneGift img {
-  height: 320px;
-  object-fit: cover;
-  object-position: 70% center; /*change the number to move the image*/
-}
+  #TheOneGift img {
+    height: 320px;
+    object-fit: cover;
+    object-position: 70% center; /*change the number to move the image*/
+  }
 
-/*PRODUCT CAROUSEL AND INSTAGRAM - smaller cards*/
-.product-card {
-  width: 220px;
-}
+  /*PRODUCT CAROUSEL AND INSTAGRAM - smaller cards*/
+  .product-card {
+    width: 220px;
+  }
 
-#LuminateYourself {
-  height: auto;
-  margin-top: 0;
-  padding-bottom: 40px;
-}
+  #LuminateYourself {
+    height: auto;
+    margin-top: 0;
+    padding-bottom: 40px;
+  }
 
-.InstaKarrusel img {
-  height: 240px;
-  width: 210px;
-}
+  .InstaKarrusel img {
+    height: 240px;
+    width: 210px;
+  }
 
   /*FOOTER - the columns wrap into more rows on their own*/
   .footer-grid {
