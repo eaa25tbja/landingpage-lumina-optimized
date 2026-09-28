@@ -46,8 +46,10 @@
    TEKST / TYPOGRAFI
    ========================================================================== */
 
-/*Overskrifter på Hero og billeder*/
-h1 {
+/*Store overskrifter. Kun Hero bruger en rigtig h1 - sektionernes overskrifter
+er h2 med klassen .display-heading, så de ser ens ud, men hierarkiet er korrekt*/
+h1,
+.display-heading {
   font-family: "Jura", sans-serif;
   font-size: 72px;
   font-weight: 200;
@@ -67,8 +69,8 @@ h3 {
   font-weight: 500;
 }
 
-/*Små CTA*/
-h4 {
+/*Overskrifter i feature- og produktkort (h3 i HTML, men mindre visuelt)*/
+.card-heading {
   font-family: "Jura", sans-serif;
   font-size: 20px;
   font-weight: 600;
@@ -81,8 +83,9 @@ h5 {
   font-weight: 500;
 }
 
-/*LUMINA one i lille*/
-h6 {
+/*LUMINA one i lille over overskrifter. Skrevet som <p>, da det er en
+label og ikke en overskrift i hierarkiet*/
+.eyebrow {
   font-family: "Jura", sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -95,8 +98,7 @@ p {
   font-weight: 500;
 }
 
-/*Fælles undertekst under en h1 (samme font/størrelse som h4, men skrevet
-som <p>, da det er brødtekst og ikke en ny overskrift i hierarkiet)*/
+/*Fælles undertekst under en stor overskrift*/
 .section-subtitle {
   font-family: "Jura", sans-serif;
   font-size: 20px;
@@ -524,7 +526,7 @@ så ringen altid følger den runde form, uanset browser)*/
   padding: 0 var(--section-side-padding);
 }
 
-.features-heading h6 {
+.features-heading .eyebrow {
   margin-bottom: var(--features-subheading-margin-bottom);
 }
 
@@ -745,7 +747,7 @@ så ringen altid følger den runde form, uanset browser)*/
   text-align: left;
 }
 
-.gift-content h1 {
+.gift-content h2 {
   max-width: 640px;
 }
 
@@ -764,7 +766,7 @@ så ringen altid følger den runde form, uanset browser)*/
   background-color: var(--bg-color);
 }
 
-#LuminateYourself h1 {
+#LuminateYourself h2 {
   color: var(--tekst-farve);
   text-align: left;
   margin-bottom: 10px;
@@ -811,7 +813,7 @@ så ringen altid følger den runde form, uanset browser)*/
   gap: 40px;
 }
 
-.footer-col h4 {
+.footer-col h2 {
   font-family: "Jura", sans-serif;
   font-size: 18px;
   font-weight: 500;
