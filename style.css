@@ -1101,3 +1101,14 @@ header::after {
   height: 240px;
   width: 210px;
 }
+
+  /*FOOTER - the columns wrap into more rows on their own*/
+  .footer-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 32px 24px;
+  }
+
+  .footer-bottom {
+    margin-top: 48px;
+  }
+}
