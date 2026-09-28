@@ -176,7 +176,7 @@ header {
   justify-content: center;
   align-items: flex-start;
   gap: 24px;
-  padding-left: 120px;
+  padding-left: var(--section-side-padding);
   padding-right: 600px;
   padding-top: 100px;
   padding-bottom: 224px;
@@ -187,15 +187,22 @@ header {
   max-width: 480px;
 }
 
-/*Scroll ned indikator, under BUY NOW knappen i Hero*/
+/*Scroll ned indikator, nederst i Hero-billedet. Placeres med
+position:absolute i forhold til header, så den altid bliver siddende
+nederst i billedet - uanset skærmens højde - i stedet for at følge
+midten af HeroText-teksten*/
 
 .scroll-indicator {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 8px;
-  margin-top: 40px;
   color: var(--tekst-billeder);
+  text-align: center;
 }
 
 .scroll-indicator p {
@@ -207,6 +214,26 @@ header {
 .scroll-indicator img {
   width: 16px;
   height: auto;
+}
+
+/*På smallere skærme er der ikke plads til den brede højre-margin,
+så teksten flyder ud af billedet - denne gør Hero-teksten mindre
+og giver den mere plads, så den forbliver synlig*/
+@media (max-width: 1100px) {
+  #HeroText {
+    padding-left: 60px;
+    padding-right: 80px;
+    padding-top: 80px;
+    padding-bottom: 120px;
+  }
+
+  #HeroText h1 {
+    font-size: 44px;
+  }
+
+  .scroll-indicator {
+    bottom: 40px;
+  }
 }
 
 /* ==========================================================================
