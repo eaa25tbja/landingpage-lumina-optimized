@@ -1059,3 +1059,29 @@ header::after {
   object-fit: cover;
   object-position: right center;
 }
+
+/*GIFT - dark background with white text, and the image goes below*/
+#TheOneGift {
+  display: flex;
+  flex-direction: column;
+  background-color: var(
+    --Footer
+  ); /*same dark color as the hero, menu and footer*/
+}
+
+.gift-content {
+  position: static; /*no longer on top of the image*/
+  order: -1; /*the image comes first in the HTML, so this moves the text above it*/
+  padding: 40px var(--section-side-padding);
+}
+
+.gift-content h2,
+.gift-subtitle {
+  max-width: 100%;
+}
+
+#TheOneGift img {
+  height: 320px;
+  object-fit: cover;
+  object-position: 70% center; /*change the number to move the image*/
+}
