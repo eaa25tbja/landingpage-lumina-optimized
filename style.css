@@ -552,7 +552,7 @@ så ringen altid følger den runde form, uanset browser)*/
   overflow-x: auto; /*gør det muligt at scrolle vandret*/
   overscroll-behavior-inline: contain; /*fjerner muligheden for at scrolle i andre elementer på siden*/
   gap: var(--card-gap);
-  padding: 20px var(--card-padding) 20px;
+  padding: 0 var(--card-padding);
 }
 
 .product-card {
@@ -672,7 +672,7 @@ så ringen altid følger den runde form, uanset browser)*/
   grid-auto-flow: column; /*lægger billederne vertikalt*/
   overflow-x: auto; /*stopper billederne i bare at fortsætte ud i "marginen"*/
   overscroll-behavior-inline: contain; /*fjerner muligheden for at scrolle i andre elementer på siden*/
-  padding: 20px var(--card-padding) 20px;
+  padding: 0 var(--card-padding);
   gap: 10px;
 }
 
@@ -695,15 +695,14 @@ så ringen altid følger den runde form, uanset browser)*/
 
 .footer-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 40px;
 }
 
 .footer-col h4 {
-  font-family: "Manrope", sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 0.04em;
+  font-family: "Jura", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
   margin-bottom: 20px;
 }
 
