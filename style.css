@@ -1019,3 +1019,43 @@ header::after {
 .feature-card {
   padding: 32px 20px 40px;
 }
+
+/*TRUSTPILOT - the text was absolute on top of the image. Now the image is a
+  background, and the text sits in normal flow*/
+#TrustSection {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 40px var(--section-side-padding);
+}
+
+.trust-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.trust-heading,
+.trust-quote-card,
+.trust-rating {
+  position: static;
+  transform: none;
+}
+
+.trust-quote-card {
+  width: 100%;
+}
+
+.trust-rating {
+  width: 100%;
+  max-width: 100%;
+  margin: 0; /* removes the negative margin that pushed it out to the right */
+  height: 100px; /* bigger number = bigger rating */
+  object-fit: cover;
+  object-position: right center;
+}
