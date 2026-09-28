@@ -1001,3 +1001,21 @@ header::after {
   align-self: center;
   margin-top: 24px;
 }
+
+/*FEATURES - the cards fill the full width and go from 2 to 1 column on their own*/
+.features-header {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.features-tagline {
+  text-align: left;
+}
+
+.features-grid {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.feature-card {
+  padding: 32px 20px 40px;
+}
