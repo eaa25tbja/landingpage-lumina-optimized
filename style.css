@@ -890,3 +890,18 @@ så ringen altid følger den runde form, uanset browser)*/
     --features-header-margin-bottom: 32px;
   }
 }
+
+/*TEKST - mindre overskrifter*/
+h1,
+#HeroText h1,
+.display-heading {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+.section-subtitle {
+  font-size: 16px;
+}
