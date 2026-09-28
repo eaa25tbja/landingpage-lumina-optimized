@@ -1085,3 +1085,19 @@ header::after {
   object-fit: cover;
   object-position: 70% center; /*change the number to move the image*/
 }
+
+/*PRODUCT CAROUSEL AND INSTAGRAM - smaller cards*/
+.product-card {
+  width: 220px;
+}
+
+#LuminateYourself {
+  height: auto;
+  margin-top: 0;
+  padding-bottom: 40px;
+}
+
+.InstaKarrusel img {
+  height: 240px;
+  width: 210px;
+}
