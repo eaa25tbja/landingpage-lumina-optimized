@@ -905,3 +905,24 @@ h2 {
 .section-subtitle {
   font-size: 16px;
 }
+
+/*MENU - smaller icons and less spacing*/
+#menu {
+  padding: 12px var(--section-side-padding);
+}
+
+#logo {
+  height: 24px;
+}
+
+.nav-icons {
+  gap: 16px;
+}
+
+.nav-icons-utility {
+  gap: 8px;
+}
+
+.nav-icons img {
+  height: 26px;
+}
