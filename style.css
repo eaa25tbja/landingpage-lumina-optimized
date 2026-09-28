@@ -926,3 +926,34 @@ h2 {
 .nav-icons img {
   height: 26px;
 }
+
+/*HERO - dark background with white text, and the image goes below*/
+header {
+  height: auto; /*follows the content instead of 100vh*/
+  background-image: none; /*the image moves to ::after below*/
+  background-color: var(--Footer); /*same dark color as the menu and footer*/
+  display: flex;
+  flex-direction: column;
+}
+
+#HeroText {
+  padding: 100px var(--section-side-padding) 40px;
+}
+
+/*the image comes as a box under the text*/
+header::after {
+  content: "";
+  height: 320px;
+  background-image: url(assets/hero-section.webp);
+  background-size: cover;
+  background-position: 75% center; /*change the number until the speaker is visible*/
+}
+
+.hero-subtitle {
+  max-width: 100%;
+}
+
+.HeroButton {
+  padding: 10px 28px;
+  font-size: 18px;
+}
