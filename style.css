@@ -548,19 +548,31 @@ så ringen altid følger den runde form, uanset browser)*/
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-auto-flow: column; /*lægger kortene på række*/
+  overflow-x: auto; /*gør det muligt at scrolle vandret*/
+  overscroll-behavior-inline: contain; /*fjerner muligheden for at scrolle i andre elementer på siden*/
   gap: var(--card-gap);
-  padding: 0 var(--card-padding);
+  padding: 20px var(--card-padding) 20px;
 }
 
 .product-card {
   display: flex;
   flex-direction: column;
+  width: 260px;
+  flex-shrink: 0;
   background-color: var(--Card-bg);
   padding: var(--card-padding);
   color: var(--tekst-farve);
   border-radius: 20px;
   box-shadow: 0 10px 16px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.14);
 }
 
 .product-card img {
@@ -660,7 +672,7 @@ så ringen altid følger den runde form, uanset browser)*/
   grid-auto-flow: column; /*lægger billederne vertikalt*/
   overflow-x: auto; /*stopper billederne i bare at fortsætte ud i "marginen"*/
   overscroll-behavior-inline: contain; /*fjerner muligheden for at scrolle i andre elementer på siden*/
-  padding: 0 var(--card-padding);
+  padding: 20px var(--card-padding) 20px;
   gap: 10px;
 }
 
