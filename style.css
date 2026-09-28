@@ -1,9 +1,17 @@
+/* ==========================================================================
+   RESET
+   ========================================================================== */
+
 /*fjern whitespace*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* ==========================================================================
+   VARIABLER
+   ========================================================================== */
 
 /*Farve variabler*/
 :root {
@@ -12,10 +20,6 @@
   --tekst-billeder: #fafafa;
   --CTA: #332721;
   --CTA-tekst: #fafafa;
-  --Jacks-White: #e6d8bd;
-  --Crisp-Brown: #332721;
-  --Springing-Silver: #d8dbde;
-  --Sabbath-Black: #000000;
   --Card-bg: #f5f5f5;
   --Footer: #282119;
 
@@ -38,7 +42,9 @@
   --trust-card-gap: 20px; /*Afstand mellem stjerner, citat og navn i kortet*/
 }
 
-/*Tekst variabler*/
+/* ==========================================================================
+   TEKST / TYPOGRAFI
+   ========================================================================== */
 
 /*Overskrifter på Hero og billeder*/
 h1 {
@@ -89,69 +95,17 @@ p {
   font-weight: 500;
 }
 
-/*Baggrundsfarven sættes på hele siden*/
-body {
-  background-color: var(--bg-color);
-}
-
-/*Hero*/
-header {
-  position: relative; /*Gør det muligt at placere scroll-indikatoren nederst i billedet*/
-  height: 100vh;
-  background-color: var(--bg-color);
-
-  /* Herobilledet som baggrunden*/
-  background-image: url(assets/hero-section.webp);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-}
-
-/*Hero tekst styles*/
-
-#HeroText {
-  color: var(--tekst-billeder);
-  font-family:;
-  /* Tekstens placering */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 24px;
-  padding-left: 120px;
-  padding-right: 600px;
-  padding-top: 100px;
-  padding-bottom: 224px;
-  text-align: left;
-}
-
-.hero-subtitle {
-  max-width: 480px;
-  font:;
-}
-
-/*Scroll ned indikator, under BUY NOW knappen i Hero*/
-
-.scroll-indicator {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-  margin-top: 40px;
-  color: var(--tekst-billeder);
-}
-
-.scroll-indicator p {
+/*Fælles undertekst under en h1 (samme font/størrelse som h4, men skrevet
+som <p>, da det er brødtekst og ikke en ny overskrift i hierarkiet)*/
+.section-subtitle {
   font-family: "Jura", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: 600;
 }
 
-.scroll-indicator img {
-  width: 16px;
-  height: auto;
-}
+/* ==========================================================================
+   GENBRUGTE KNAPPER
+   ========================================================================== */
 
 /*BUY NOW knap styles*/
 
@@ -186,7 +140,79 @@ header {
   color: var(--CTA-tekst);
 }
 
-/*Menu linje*/
+/* ==========================================================================
+   BODY
+   ========================================================================== */
+
+/*Baggrundsfarven sættes på hele siden*/
+body {
+  background-color: var(--bg-color);
+}
+
+/* ==========================================================================
+   HEADER / HERO
+   ========================================================================== */
+
+header {
+  position: relative; /*Gør det muligt at placere scroll-indikatoren nederst i billedet*/
+  height: 100vh;
+  background-color: var(--bg-color);
+
+  /* Herobilledet som baggrunden*/
+  background-image: url(assets/hero-section.webp);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+/*Hero tekst styles*/
+
+#HeroText {
+  color: var(--tekst-billeder);
+  /* Tekstens placering */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  padding-left: 120px;
+  padding-right: 600px;
+  padding-top: 100px;
+  padding-bottom: 224px;
+  text-align: left;
+}
+
+.hero-subtitle {
+  max-width: 480px;
+}
+
+/*Scroll ned indikator, under BUY NOW knappen i Hero*/
+
+.scroll-indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 40px;
+  color: var(--tekst-billeder);
+}
+
+.scroll-indicator p {
+  font-family: "Jura", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.scroll-indicator img {
+  width: 16px;
+  height: auto;
+}
+
+/* ==========================================================================
+   MENU
+   ========================================================================== */
+
 #menu {
   display: flex;
   flex-direction: row;
@@ -224,7 +250,9 @@ header {
   display: block;
 }
 
-/*HER INDSÆTTES FØRSTE PRODUKTSIDE*/
+/* ==========================================================================
+   PRODUKTSIDE 1
+   ========================================================================== */
 
 #Produktside1 {
   display: flex;
@@ -243,6 +271,7 @@ header {
   gap: 32px;
   padding: 16px;
 }
+
 .container {
   position: relative;
   width: 40vw;
@@ -274,7 +303,7 @@ header {
   height: 20px;
 }
 
-/*Produktside*/
+/*Farveskift på produktbilledet*/
 
 .color,
 .color1,
@@ -364,90 +393,9 @@ så ringen altid følger den runde form, uanset browser)*/
   align-items: center;
 }
 
-/*HER INDSÆTTES LUMINATE YOURSELF INSTA SECTION*/
-
-#LuminateYourself {
-  height: 630px;
-  width: 100%;
-  margin-top: 10px;
-  background-color: var(--bg-color);
-}
-
-#LuminateYourself h1 {
-  color: var(--tekst-farve);
-  /* Overskriftens placering */
-  left: 120px;
-  right: 700px;
-  top: 200px;
-  text-align: left;
-  margin-bottom: 10px;
-  margin-left: 80px;
-}
-
-#LuminateYourself h6 {
-  color: var(--tekst-farve);
-  /* Denne lille teksts placering */
-  left: 120px;
-  right: 700px;
-  top: 400px;
-  text-align: left;
-  margin-left: 80px;
-  margin-top: 24px;
-  margin-bottom: 14px;
-}
-
-.InstaKarrusel {
-  display: grid; /*lægger billederne på række*/
-  grid-auto-flow: column; /*lægger billederne vertikalt*/
-  overflow-x: auto; /*stopper billederne i bare at fortsætte ud i "marginen"*/
-  overscroll-behavior-inline: contain; /*fjerner muligheden for at scrolle i andre elementer på siden*/
-  padding: 0 var(--card-padding);
-  gap: 10px;
-}
-
-.InstaKarrusel img {
-  height: 320px;
-  width: 280px;
-  object-fit: cover; /*udfylder billederne i den defineret størrelse uden at strække billederne*/
-  border-radius: 20px;
-}
-
-/*THE ONE GIFT THAT HAS IT ALL billede styles*/
-
-#TheOneGift {
-  position: relative; /*Gør det muligt, at placere tekst/knapper oven på billedet*/
-}
-
-#TheOneGift img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/*THE ONE GIFT THAT HAS IT ALL tekst styles*/
-
-.gift-content {
-  color: var(--tekst-billeder);
-  /* Tekstens placering */
-  position: absolute; /*Placerer teksten ovenpå billedet*/
-  top: 200px;
-  left: var(--section-side-padding);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 24px;
-  text-align: left;
-}
-
-.gift-content h1 {
-  max-width: 640px;
-}
-
-.gift-subtitle {
-  max-width: 540px;
-}
-
-/*HER INDSÆTTES FEATURES SEKTION*/
+/* ==========================================================================
+   FEATURES
+   ========================================================================== */
 
 #Features {
   padding: 100px 0;
@@ -471,9 +419,6 @@ så ringen altid følger den runde form, uanset browser)*/
 .features-tagline {
   max-width: 540px;
   text-align: right;
-  font-family: "Jura", sans-serif;
-  font-size: 20px;
-  font-weight: 500;
 }
 
 .features-grid {
@@ -509,7 +454,9 @@ så ringen altid følger den runde form, uanset browser)*/
   font-weight: 500;
 }
 
-/*HER INDSÆTTES TRUSTPILOT SEKTION*/
+/* ==========================================================================
+   TRUSTPILOT ("In Lumina we trust")
+   ========================================================================== */
 
 #TrustSection {
   position: relative; /*Gør det muligt, at placere tekst/kort oven på billedet*/
@@ -581,7 +528,9 @@ så ringen altid følger den runde form, uanset browser)*/
   pointer-events: none;
 }
 
-/*HER INDSÆTTES JUST ONE MORE SEKTION OG THE ONE THATS GOING AWAY SEKTION*/
+/* ==========================================================================
+   JUST ONE MORE (produkt-showcase)
+   ========================================================================== */
 
 .product-showcase {
   padding: var(--section-side-padding) 0;
@@ -645,7 +594,86 @@ så ringen altid følger den runde form, uanset browser)*/
   opacity: 0.7;
 }
 
-/*HER INDSÆTTES FOOTER*/
+/* ==========================================================================
+   THE ONE GIFT
+   ========================================================================== */
+
+#TheOneGift {
+  position: relative; /*Gør det muligt, at placere tekst/knapper oven på billedet*/
+}
+
+#TheOneGift img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.gift-content {
+  color: var(--tekst-billeder);
+  /* Tekstens placering */
+  position: absolute; /*Placerer teksten ovenpå billedet*/
+  top: 200px;
+  left: var(--section-side-padding);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  text-align: left;
+}
+
+.gift-content h1 {
+  max-width: 640px;
+}
+
+.gift-subtitle {
+  max-width: 540px;
+}
+
+/* ==========================================================================
+   LUMINATE YOURSELF (Instagram)
+   ========================================================================== */
+
+#LuminateYourself {
+  height: 630px;
+  width: 100%;
+  margin-top: 10px;
+  background-color: var(--bg-color);
+}
+
+#LuminateYourself h1 {
+  color: var(--tekst-farve);
+  text-align: left;
+  margin-bottom: 10px;
+  margin-left: 80px;
+}
+
+#LuminateYourself .section-subtitle {
+  color: var(--tekst-farve);
+  text-align: left;
+  margin-left: 80px;
+  margin-top: 24px;
+  margin-bottom: 14px;
+}
+
+.InstaKarrusel {
+  display: grid; /*lægger billederne på række*/
+  grid-auto-flow: column; /*lægger billederne vertikalt*/
+  overflow-x: auto; /*stopper billederne i bare at fortsætte ud i "marginen"*/
+  overscroll-behavior-inline: contain; /*fjerner muligheden for at scrolle i andre elementer på siden*/
+  padding: 0 var(--card-padding);
+  gap: 10px;
+}
+
+.InstaKarrusel img {
+  height: 320px;
+  width: 280px;
+  object-fit: cover; /*udfylder billederne i den defineret størrelse uden at strække billederne*/
+  border-radius: 20px;
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
 
 #Footer {
   background-color: var(--Footer);
