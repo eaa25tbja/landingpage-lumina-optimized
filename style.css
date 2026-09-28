@@ -178,7 +178,7 @@ header {
   gap: 24px;
   padding-left: var(--section-side-padding);
   padding-right: 600px;
-  padding-top: 100px;
+  padding-top: 150px;
   padding-bottom: 224px;
   text-align: left;
 }
@@ -241,6 +241,12 @@ og giver den mere plads, så den forbliver synlig*/
    ========================================================================== */
 
 #menu {
+  position: fixed; /*Menuen bliver siddende i toppen, når man scroller*/
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /*Ligger oven på alt andet indhold, fx kort og billeder*/
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -683,15 +689,15 @@ så ringen altid følger den runde form, uanset browser)*/
   color: var(--tekst-farve);
   text-align: left;
   margin-bottom: 10px;
-  margin-left: 80px;
+  padding: 0 var(--section-side-padding);
 }
 
 #LuminateYourself .section-subtitle {
   color: var(--tekst-farve);
   text-align: left;
-  margin-left: 80px;
   margin-top: 24px;
   margin-bottom: 14px;
+  padding: 0 var(--section-side-padding) 20px;
 }
 
 .InstaKarrusel {
