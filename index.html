@@ -14,8 +14,8 @@
 
   <body>
     <header>
-      <!--Navigation: <nav> så skærmlæsere kan finde menuen som et landmark-->
-      <nav id="menu" aria-label="Main">
+      <!--Menuen er lavet om til et nav-element-->
+      <nav id="menu">
         <img
           src="assets/icons/nav-bar-icons/logo.png"
           alt="LUMINA audio, Nordic sound"
@@ -50,7 +50,7 @@
     </header>
 
     <main>
-      <section id="Produktside1" aria-labelledby="product-title">
+      <section id="Produktside1">
         <div class="container">
           <div class="color active color1"></div>
           <div class="color color2"></div>
@@ -61,7 +61,7 @@
         <div class="produktinfo">
           <div class="headlineProduct">
             <p class="eyebrow">LUMINA one</p>
-            <h2 id="product-title">Portable Bluetooth Speaker</h2>
+            <h2>Portable Bluetooth Speaker</h2>
             <p>
               A small speaker with big sound, a sleek design and incredible
               features:
@@ -181,11 +181,11 @@
         </div>
       </section>
 
-      <section id="Features" aria-labelledby="features-title">
+      <section id="Features">
         <div class="features-header">
           <div class="features-heading">
             <p class="eyebrow">LUMINA one</p>
-            <h2 id="features-title" class="display-heading">Features</h2>
+            <h2 class="display-heading">Features</h2>
           </div>
           <p class="section-subtitle features-tagline">
             Thoughtful design. Powerful sound.<br />
@@ -249,7 +249,7 @@
         </div>
       </section>
 
-      <section id="TrustSection" aria-labelledby="trust-title">
+      <section id="TrustSection">
         <img
           src="assets/trustpilot-section.webp"
           alt="Mother cooking with her daughter, LUMINA one speaker on the counter"
@@ -258,7 +258,7 @@
 
         <div class="trust-heading">
           <p class="eyebrow">LUMINA one</p>
-          <h2 id="trust-title" class="display-heading">In Lumina we trust</h2>
+          <h2 class="display-heading">In Lumina we trust</h2>
           <p>
             Read more reviews on <a href="#" class="trust-link">trustpilot</a>
           </p>
@@ -290,15 +290,9 @@
         />
       </section>
 
-      <section
-        id="JustOneMore"
-        class="product-showcase"
-        aria-labelledby="more-title"
-      >
+      <section id="JustOneMore" class="product-showcase">
         <div class="section-header">
-          <h2 id="more-title" class="display-heading">
-            Explore more from Lumina audio
-          </h2>
+          <h2 class="display-heading">Explore more from Lumina audio</h2>
           <p>Explore our other products and find your perfect match</p>
         </div>
 
@@ -401,15 +395,13 @@
         </div>
       </section>
 
-      <section id="TheOneGift" aria-labelledby="gift-title">
+      <section id="TheOneGift">
         <img
           src="assets/lumina-gift-section.webp"
           alt="THE ONE GIFT THAT HAS IT ALL"
         />
         <div class="gift-content">
-          <h2 id="gift-title" class="display-heading">
-            The one gift that has it all
-          </h2>
+          <h2 class="display-heading">The one gift that has it all</h2>
           <p class="section-subtitle gift-subtitle">
             Our LUMINA one speaker was named Best Speaker, with HIFI Klubben
             highlighting its visual flair and sonic performance.
@@ -418,8 +410,8 @@
         </div>
       </section>
 
-      <section id="LuminateYourself" aria-labelledby="insta-title">
-        <h2 id="insta-title" class="display-heading">Follow us on Instagram</h2>
+      <section id="LuminateYourself">
+        <h2 class="display-heading">Follow us on Instagram</h2>
         <p class="section-subtitle">
           Tag us at @Luminaaudio on Instagram to share your moment
         </p>
@@ -461,11 +453,11 @@
       </section>
     </main>
 
-    <!--Footer ligger nu uden for <main> som et rigtigt <footer> landmark-->
+    <!--Footeren er flyttet ud af main og lavet om til et footer-element-->
     <footer id="Footer">
       <div class="footer-grid">
-        <nav class="footer-col" aria-labelledby="footer-care">
-          <h2 id="footer-care">CUSTOMER CARE</h2>
+        <div class="footer-col">
+          <h2>CUSTOMER CARE</h2>
           <ul>
             <li><a href="#">Shipping and delivery</a></li>
             <li><a href="#">Returns</a></li>
@@ -474,10 +466,10 @@
             <li><a href="#">FAQ</a></li>
             <li><a href="#">Find store</a></li>
           </ul>
-        </nav>
+        </div>
 
-        <nav class="footer-col" aria-labelledby="footer-policies">
-          <h2 id="footer-policies">OUR POLICIES</h2>
+        <div class="footer-col">
+          <h2>OUR POLICIES</h2>
           <ul>
             <li><a href="#">Accessibility</a></li>
             <li><a href="#">Counterfeit</a></li>
@@ -486,10 +478,10 @@
             <li><a href="#">Privacy Policy</a></li>
             <li><a href="#">Policies and terms</a></li>
           </ul>
-        </nav>
+        </div>
 
-        <nav class="footer-col" aria-labelledby="footer-company">
-          <h2 id="footer-company">OUR COMPANY</h2>
+        <div class="footer-col">
+          <h2>OUR COMPANY</h2>
           <ul>
             <li><a href="#">Sustainability</a></li>
             <li><a href="#">Investors</a></li>
@@ -499,10 +491,10 @@
             <li><a href="#">Become a sales partner</a></li>
             <li><a href="#">Contact us</a></li>
           </ul>
-        </nav>
+        </div>
 
-        <nav class="footer-col" aria-labelledby="footer-social">
-          <h2 id="footer-social">SOCIAL LINKS</h2>
+        <div class="footer-col">
+          <h2>SOCIAL LINKS</h2>
           <ul>
             <li><a href="#">Facebook</a></li>
             <li><a href="#">Instagram</a></li>
@@ -512,7 +504,7 @@
             <li><a href="#">TikTok</a></li>
             <li><a href="#">Pinterest</a></li>
           </ul>
-        </nav>
+        </div>
       </div>
 
       <div class="footer-bottom">
