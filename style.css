@@ -55,6 +55,15 @@ h1,
   font-weight: 300;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
 /*Overskrift på produktsider*/
 h2 {
   font-family: "Jura", sans-serif;
